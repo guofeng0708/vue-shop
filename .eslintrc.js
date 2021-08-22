@@ -1,4 +1,3 @@
-
 module.exports = {
   globals: {
     defineProps: 'readonly',
@@ -23,6 +22,13 @@ module.exports = {
     'vue',
     '@typescript-eslint'
   ],
-  rules: {
-  }
+  rules: {},
+  overrides: [
+    {
+      files: ['src/api/**/*.ts'],
+      rules: {
+        camelcase: 'off'
+      }
+    }
+  ]
 }
