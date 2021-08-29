@@ -11,12 +11,13 @@
     "lib": ["esnext", "dom"],
     "isolatedModules": true,
     "types": ["vite/client"],
-    "baseUrl": "./",
     "paths": {
       "@/*": [
         "src/*"
       ]
-    }
+    },
+    "baseUrl": "./",
+    "skipLibCheck": true
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }

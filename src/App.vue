@@ -1,22 +1,10 @@
 <template>
-  <router-view />
+  <!-- 路由的渲染出口 -->
+  <el-config-provider :locale="locale">
+    <router-view />
+  </el-config-provider>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'App'
-})
+<script lang="ts" setup>
+import locale from 'element-plus/lib/locale/lang/zh-cn'
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

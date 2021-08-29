@@ -1,46 +1,63 @@
 {
-  "name": "vite-shop",
+  "name": "shop-admin",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "npm run tsc && vite build",
     "serve": "vite preview",
     "lint": "eslint ./src/**/*.{js,jsx,vue,ts,tsx} --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "tsc": "vue-tsc -noEmit"
   },
   "dependencies": {
+    "@element-plus/icons": "0.0.11",
     "axios": "^0.21.1",
-    "vue": "^3.0.5",
+    "element-plus": "^1.0.2-beta.70",
+    "install": "^0.13.0",
+    "ionicons": "^3.0.0",
+    "lodash": "^4.17.21",
+    "npm": "^7.20.6",
+    "nprogress": "^0.2.0",
+    "sortablejs": "^1.14.0",
+    "vue": "^3.2.2",
     "vue-router": "^4.0.11",
-    "vuex": "^4.0.2"
+    "vuex": "^4.0.2",
+    "vuex-persistedstate": "^4.0.0",
+    "vxe-table": "^4.0.26",
+    "wangeditor": "^4.7.6",
+    "xe-utils": "^3.3.1",
+    "xlsx": "^0.17.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^13.1.0",
-    "@types/node": "^16.7.1",
-    "@typescript-eslint/eslint-plugin": "^4.29.2",
-    "@typescript-eslint/parser": "^4.29.2",
-    "@vitejs/plugin-vue": "^1.3.0",
-    "@vitejs/plugin-vue-jsx": "^1.1.7",
-    "@vue/compiler-sfc": "^3.0.5",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@types/lodash": "^4.14.172",
+    "@types/node": "^16.4.3",
+    "@types/nprogress": "^0.2.0",
+    "@types/sortablejs": "^1.10.7",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "@vitejs/plugin-legacy": "^1.5.1",
+    "@vitejs/plugin-vue": "^1.2.5",
+    "@vitejs/plugin-vue-jsx": "^1.1.6",
+    "@vue/compiler-sfc": "^3.2.2",
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.24.1",
+    "eslint-plugin-import": "^2.24.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-vue": "^7.16.0",
     "husky": "^7.0.1",
     "lint-staged": "^11.1.2",
-    "sass": "^1.38.0",
+    "sass": "^1.37.5",
     "typescript": "^4.3.2",
     "vite": "^2.4.4",
     "vite-plugin-eslint": "^1.3.0",
-    "vue-tsc": "^0.2.2"
+    "vue-tsc": "^0.0.24"
   },
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": [
-      "npm run lint",
-      "git add"
+      "npm run lint"
     ]
   }
 }

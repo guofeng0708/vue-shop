@@ -1,20 +1,7 @@
 <template>
-  <h1>首页</h1>
-  <!-- <p>{{ $store.state.count }}</p> -->
-  <img src="@/assets/logo.png">
+  <h1>首页123</h1>
 </template>
 
-<script lang="ts" setup>
-// import { useStore } from 'vuex'
-import { useStore } from '../../store'
+<script lang="ts" setup></script>
 
-const store = useStore()
-
-console.log(store.state.count)
-</script>
-
-<style lang="scss" scoped>
-h1 {
-  color: $color
-}
-</style>
+<style lang="scss" scoped></style>
